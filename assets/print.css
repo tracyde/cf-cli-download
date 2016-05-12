@@ -1,0 +1,30 @@
+.print-only {
+    display: none
+}
+
+ul.no-list-style {
+    list-style-type: none;
+    padding-left: 0
+}
+
+@media print {
+    .btn, .headers, .no-print {
+        display: none !important
+    }
+
+    .print-only {
+        display: block
+    }
+
+    .panel-collapse.collapse {
+        display: block !important
+    }
+
+    .table tr, .table th, .table td {
+        border: none !important
+    }
+
+    .print-only-statement {
+        display: none !important
+    }
+}
