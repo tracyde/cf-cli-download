@@ -16,3 +16,7 @@ for platform in "linux32-binary" "linux64-binary" "macosx64-binary" "windows32-e
   wget --content-disposition "https://cli.run.pivotal.io/stable?release=${platform}&version=6.18.0&source=github-rel"
   cd $DIR
 done
+
+cd $DIR
+cd docs
+wget --content-disposition "http://docs.pivotal.io/archives/pcf-docs-1.7.pdf"
